@@ -43,6 +43,27 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+//agregado por mi
+
+$this->loadComponent('Auth', [
+        'loginAction' => [
+            'controller' => 'Usuarios',
+            'action' => 'login'
+        ],
+        'authError' => 'No puedes acceder a esa pagina.',
+        'authenticate' => [
+            'Form' => [
+                'fields' => ['username' => 'mail','password' => 'password']
+            ]
+        ],
+        'storage' => 'Session'
+    ]);
+//autenticacion con modelo de usuarios
+$this->Auth->config('authenticate', [
+    'Basic' => ['userModel' => 'Usuarios'],
+    'Form' => ['userModel' => 'Usuarios']
+]);
+
     }
 
     /**
@@ -58,5 +79,11 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+    }
+
+//agregada por mi
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index', 'view', 'display','login']);
     }
 }

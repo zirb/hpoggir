@@ -1,0 +1,12 @@
+2016-08-09 20:22:07 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Sever" could not be found.
+Exception Attributes: array (
+  'class' => 'Sever',
+)
+Stack Trace:
+#0 /home/zir/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('Sever')
+#1 /home/zir/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /home/zir/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /home/zir/hpoggir/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
