@@ -9,6 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Alumnos Model
  *
+ * @property \Cake\ORM\Association\HasMany $Users
+ *
  * @method \App\Model\Entity\Alumno get($primaryKey, $options = [])
  * @method \App\Model\Entity\Alumno newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\Alumno[] newEntities(array $data, array $options = [])
@@ -33,6 +35,10 @@ class AlumnosTable extends Table
         $this->table('alumnos');
         $this->displayField('id');
         $this->primaryKey('id');
+
+        $this->hasMany('Users', [
+            'foreignKey' => 'alumno_id'
+        ]);
     }
 
     /**

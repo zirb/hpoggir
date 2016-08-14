@@ -1,11 +1,11 @@
-<!-- File: src/Template/Usuarios/login.ctp -->
+<!-- File: src/Template/Users/login.ctp -->
 
-<div class="usuarios form">
+<div class="users form">
 <?= $this->Flash->render('auth') ?>
 <?= $this->Form->create() ?>
     <fieldset>
-        <legend><?= __('Introduce tu email y contraseña') ?></legend>
-        <?= $this->Form->input('mail') ?>
+        <legend><?= __('Please enter your username and password') ?></legend>
+        <?= $this->Form->input('username') ?>
         <?= $this->Form->input('password') ?>
     </fieldset>
 <?= $this->Form->button(__('Login')); ?>

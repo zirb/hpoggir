@@ -46,25 +46,18 @@ class AppController extends Controller
 //agregado por mi
 
 $this->loadComponent('Auth', [
-        'loginAction' => [
-            'controller' => 'Usuarios',
-            'action' => 'login'
-        ],
-        'authError' => 'No puedes acceder a esa pagina.',
-        'authenticate' => [
-            'Form' => [
-                'fields' => ['username' => 'mail','password' => 'password']
-            ]
-        ],
-        'storage' => 'Session'
-    ]);
-//autenticacion con modelo de usuarios
-$this->Auth->config('authenticate', [
-    'Basic' => ['userModel' => 'Usuarios'],
-    'Form' => ['userModel' => 'Usuarios']
-]);
-
-    }
+            'loginRedirect' => [
+                'controller' => 'Users',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Users',
+                'action' => 'login',
+                'home'
+            ]//agregado por mi para que vea el mail
+//,'authenticate' => ['Form' => ['fields' => ['username' => 'mail']]]
+        ]);
+}
 
     /**
      * Before render callback.
@@ -84,6 +77,6 @@ $this->Auth->config('authenticate', [
 //agregada por mi
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'view', 'display','login']);
+        $this->Auth->allow(['index', 'view', 'display']);
     }
 }

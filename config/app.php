@@ -228,8 +228,8 @@ return [
              */
             //'port' => 'non_standard_port_number',
             'username' => 'root',
-            'password' => '1234',
-            'database' => 'sc06aa_poggi',
+            'password' => '',
+            'database' => 'ucad_quiniela',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],

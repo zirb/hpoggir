@@ -10,3 +10,69 @@ Stack Trace:
 #4 {main}
 
 
+2016-08-14 22:52:31 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ucad_quiniela.alumnos' doesn't exist
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'alumnos', Array, Object(Cake\Database\Schema\Table))
+#1 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('alumnos', Array)
+#2 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Table.php(434): Cake\Database\Schema\CachedCollection->describe('alumnos')
+#3 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(261): Cake\ORM\Table->schema()
+#4 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(211): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\AlumnosTable), Array)
+#5 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AlumnosTable))
+#6 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AlumnosTable), 'alumnos', 'Alumnos')
+#7 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Alumnos')
+#8 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Alumnos')
+#9 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Alumnos', 0)
+#10 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('alumnos')
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/Shell.php(452): call_user_func_array(Array, Array)
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 /home/zir/escuela/hpoggir/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-08-14 22:52:41 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ucad_quiniela.alumnos' doesn't exist
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'alumnos', Array, Object(Cake\Database\Schema\Table))
+#1 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('alumnos', Array)
+#2 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Table.php(434): Cake\Database\Schema\CachedCollection->describe('alumnos')
+#3 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(261): Cake\ORM\Table->schema()
+#4 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(211): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\AlumnosTable), Array)
+#5 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AlumnosTable))
+#6 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AlumnosTable), 'alumnos', 'Alumnos')
+#7 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Alumnos')
+#8 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Alumnos')
+#9 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Alumnos', 0)
+#10 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('alumnos')
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/Shell.php(452): call_user_func_array(Array, Array)
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 /home/zir/escuela/hpoggir/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-08-14 22:52:43 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ucad_quiniela.alumnos' doesn't exist
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'alumnos', Array, Object(Cake\Database\Schema\Table))
+#1 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('alumnos', Array)
+#2 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Table.php(434): Cake\Database\Schema\CachedCollection->describe('alumnos')
+#3 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(261): Cake\ORM\Table->schema()
+#4 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(211): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\AlumnosTable), Array)
+#5 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\AlumnosTable))
+#6 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\AlumnosTable), 'alumnos', 'Alumnos')
+#7 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Alumnos')
+#8 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Alumnos')
+#9 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Alumnos', 0)
+#10 /home/zir/escuela/hpoggir/vendor/cakephp/bake/src/Shell/BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('alumnos')
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/Shell.php(452): call_user_func_array(Array, Array)
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 /home/zir/escuela/hpoggir/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+

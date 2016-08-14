@@ -20,7 +20,11 @@ class PartidosControllerTest extends IntegrationTestCase
         'app.lista_ligas',
         'app.ligas',
         'app.equipos',
-        'app.quinielas'
+        'app.quinielas',
+        'app.usuarios',
+        'app.direcciones',
+        'app.alumnos',
+        'app.users'
     ];
 
     /**

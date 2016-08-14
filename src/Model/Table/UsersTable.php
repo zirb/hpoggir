@@ -7,21 +7,20 @@ use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Usuarios Model
+ * Users Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Direcciones
  * @property \Cake\ORM\Association\BelongsTo $Alumnos
- * @property \Cake\ORM\Association\HasMany $Quinielas
  *
- * @method \App\Model\Entity\Usuario get($primaryKey, $options = [])
- * @method \App\Model\Entity\Usuario newEntity($data = null, array $options = [])
- * @method \App\Model\Entity\Usuario[] newEntities(array $data, array $options = [])
- * @method \App\Model\Entity\Usuario|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
- * @method \App\Model\Entity\Usuario patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
- * @method \App\Model\Entity\Usuario[] patchEntities($entities, array $data, array $options = [])
- * @method \App\Model\Entity\Usuario findOrCreate($search, callable $callback = null)
+ * @method \App\Model\Entity\User get($primaryKey, $options = [])
+ * @method \App\Model\Entity\User newEntity($data = null, array $options = [])
+ * @method \App\Model\Entity\User[] newEntities(array $data, array $options = [])
+ * @method \App\Model\Entity\User|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \App\Model\Entity\User patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \App\Model\Entity\User[] patchEntities($entities, array $data, array $options = [])
+ * @method \App\Model\Entity\User findOrCreate($search, callable $callback = null)
  */
-class UsuariosTable extends Table
+class UsersTable extends Table
 {
 
     /**
@@ -34,7 +33,7 @@ class UsuariosTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('usuarios');
+        $this->table('users');
         $this->displayField('id');
         $this->primaryKey('id');
 
@@ -43,9 +42,6 @@ class UsuariosTable extends Table
         ]);
         $this->belongsTo('Alumnos', [
             'foreignKey' => 'alumno_id'
-        ]);
-        $this->hasMany('Quinielas', [
-            'foreignKey' => 'usuario_id'
         ]);
     }
 
@@ -62,8 +58,7 @@ class UsuariosTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->requirePresence('nombre', 'create')
-            ->notEmpty('nombre');
+            ->allowEmpty('username');
 
         $validator
             ->allowEmpty('ape_pat');
@@ -86,6 +81,9 @@ class UsuariosTable extends Table
         $validator
             ->allowEmpty('nacionalidad');
 
+        $validator
+            ->allowEmpty('role');
+
         return $validator;
     }
 
@@ -98,6 +96,7 @@ class UsuariosTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
+        $rules->add($rules->isUnique(['username']));
         $rules->add($rules->existsIn(['dir_id'], 'Direcciones'));
         $rules->add($rules->existsIn(['alumno_id'], 'Alumnos'));
 

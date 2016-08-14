@@ -25,7 +25,8 @@ class LigasTableTest extends TestCase
      */
     public $fixtures = [
         'app.ligas',
-        'app.lista_ligas'
+        'app.lista_ligas',
+        'app.equipos'
     ];
 
     /**

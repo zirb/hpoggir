@@ -101,9 +101,9 @@ class AlumnosController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $alumno = $this->Alumnos->get($id);
         if ($this->Alumnos->delete($alumno)) {
-            $this->Flash->success(__('El alumno ha sido eliminado.'));
+            $this->Flash->success(__('The alumno has been deleted.'));
         } else {
-            $this->Flash->error(__('El alumno no pudo ser eliminado, intenta de nuevo.'));
+            $this->Flash->error(__('The alumno could not be deleted. Please, try again.'));
         }
 
         return $this->redirect(['action' => 'index']);

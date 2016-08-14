@@ -4,11 +4,18 @@ namespace App\Test\Fixture;
 use Cake\TestSuite\Fixture\TestFixture;
 
 /**
- * AlumnosFixture
+ * AlumnoFixture
  *
  */
-class AlumnosFixture extends TestFixture
+class AlumnoFixture extends TestFixture
 {
+
+    /**
+     * Table name
+     *
+     * @var string
+     */
+    public $table = 'alumno';
 
     /**
      * Fields

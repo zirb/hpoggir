@@ -20,6 +20,7 @@ class QuinielasControllerTest extends IntegrationTestCase
         'app.usuarios',
         'app.direcciones',
         'app.alumnos',
+        'app.users',
         'app.partidos',
         'app.lista_ligas',
         'app.ligas',

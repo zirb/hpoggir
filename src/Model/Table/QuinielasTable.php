@@ -9,7 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Quinielas Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Usuarios
+ * @property \Cake\ORM\Association\BelongsTo $Users
  * @property \Cake\ORM\Association\BelongsTo $Partidos
  *
  * @method \App\Model\Entity\Quiniela get($primaryKey, $options = [])
@@ -37,7 +37,7 @@ class QuinielasTable extends Table
         $this->displayField('id');
         $this->primaryKey('id');
 
-        $this->belongsTo('Usuarios', [
+        $this->belongsTo('Users', [
             'foreignKey' => 'usuario_id',
             'joinType' => 'INNER'
         ]);
@@ -80,7 +80,7 @@ class QuinielasTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['usuario_id'], 'Usuarios'));
+        $rules->add($rules->existsIn(['usuario_id'], 'Users'));
         $rules->add($rules->existsIn(['partido_id'], 'Partidos'));
 
         return $rules;

@@ -17,7 +17,8 @@ class EquiposControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.equipos',
-        'app.lista_ligas'
+        'app.lista_ligas',
+        'app.ligas'
     ];
 
     /**
