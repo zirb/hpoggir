@@ -20,6 +20,7 @@ use Cake\Network\Request;
 use Cake\Network\Response;
 use Cake\ORM\TableRegistry;
 
+
 /**
  * Base Authentication class with common methods and properties.
  *

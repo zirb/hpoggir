@@ -46,17 +46,23 @@ class AppController extends Controller
 //agregado por mi
 
 $this->loadComponent('Auth', [
+	    'authenticate' => ['Form'=>[
+		'userModel' => 'Users',
+                'fields' => ['username' => 'mail', 'password' => 'password']
+            	]
+	     ],
             'loginRedirect' => [
                 'controller' => 'Users',
                 'action' => 'index'
             ],
             'logoutRedirect' => [
                 'controller' => 'Users',
-                'action' => 'login',
-                'home'
+                'action' => 'login'
             ]//agregado por mi para que vea el mail
 //,'authenticate' => ['Form' => ['fields' => ['username' => 'mail']]]
-        ]);
+        ,
+        'storage' => 'Session'
+]);
 }
 
     /**

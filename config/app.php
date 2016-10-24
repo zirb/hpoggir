@@ -234,7 +234,7 @@ return [
             'timezone' => 'UTC',
             'flags' => [],
             'cacheMetadata' => true,
-            'log' => false,
+            'log' => true,
 
             /**
              * Set identifier quoting to true if you are using reserved words or

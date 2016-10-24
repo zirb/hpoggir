@@ -96,10 +96,13 @@ class UsersTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
+        $rules->add($rules->isUnique(['mail']));
         $rules->add($rules->isUnique(['username']));
         $rules->add($rules->existsIn(['dir_id'], 'Direcciones'));
         $rules->add($rules->existsIn(['alumno_id'], 'Alumnos'));
 
         return $rules;
     }
+
+
 }

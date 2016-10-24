@@ -2834,3 +2834,379 @@ Stack Trace:
 2016-08-14 23:28:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2016-08-14 23:28:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2016-08-14 23:28:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:48:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:48:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:48:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:48:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:48:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:48:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:48:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:52:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:52:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:52:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:52:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:52:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:53:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:53:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:53:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:53:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:54:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:54:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:56:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:56:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:56:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:56:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:56:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 20:56:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.active' in 'where clause'
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Connection.php(276): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Query.php(189): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Query.php(954): Cake\Database\Query->execute()
+#4 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(277): Cake\ORM\Query->_execute()
+#5 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Query.php(902): Cake\ORM\Query->_all()
+#6 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(405): Cake\ORM\Query->all()
+#7 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(108): Cake\ORM\Query->first()
+#8 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Auth/FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('bruno', '1234')
+#9 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(786): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 /home/zir/escuela/hpoggir/src/Controller/UsersController.php(25): Cake\Controller\Component\AuthComponent->identify()
+#11 [internal function]: App\Controller\UsersController->login()
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(115): Cake\Controller\Controller->invokeAction()
+#14 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(88): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#15 /home/zir/escuela/hpoggir/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-08-15 21:05:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:05:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:05:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.active' in 'where clause'
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Connection.php(276): Cake\Database\Statement\MysqlStatement->execute()
+#2 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Query.php(189): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Query.php(954): Cake\Database\Query->execute()
+#4 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(277): Cake\ORM\Query->_execute()
+#5 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Query.php(902): Cake\ORM\Query->_all()
+#6 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(405): Cake\ORM\Query->all()
+#7 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(108): Cake\ORM\Query->first()
+#8 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Auth/FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('bruno', '1234')
+#9 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(786): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 /home/zir/escuela/hpoggir/src/Controller/UsersController.php(25): Cake\Controller\Component\AuthComponent->identify()
+#11 [internal function]: App\Controller\UsersController->login()
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(115): Cake\Controller\Controller->invokeAction()
+#14 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(88): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#15 /home/zir/escuela/hpoggir/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-08-15 21:13:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:13:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:13:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:27:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:27:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:29:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:29:17 Error: [BadMethodCallException] Cannot reconfigure existing key "queries"
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Log/Log.php(281): Cake\Log\Log::_config('queries', Array)
+#1 /home/zir/escuela/hpoggir/src/Controller/AppController.php(30): Cake\Log\Log::config('queries', Array)
+#2 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(412): include('/home/zir/escue...')
+#3 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/zir/escue...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#5 /home/zir/escuela/hpoggir/src/Controller/UsersController.php(12): spl_autoload_call('App\\Controller\\...')
+#6 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(412): include('/home/zir/escue...')
+#7 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/zir/escue...')
+#8 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#9 [internal function]: spl_autoload_call('App\\Controller\\...')
+#10 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#11 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Use...', 'App')
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(91): Cake\Core\App::className('Users', 'Controller', 'Controller')
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventManager.php(425): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventManager.php(386): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(79): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /home/zir/escuela/hpoggir/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-08-15 21:29:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:29:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:29:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:30:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:30:03 Error: [BadMethodCallException] Cannot reconfigure existing key "queries"
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Log/Log.php(281): Cake\Log\Log::_config('queries', Array)
+#1 /home/zir/escuela/hpoggir/src/Controller/AppController.php(30): Cake\Log\Log::config('queries', Array)
+#2 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(412): include('/home/zir/escue...')
+#3 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/zir/escue...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#5 /home/zir/escuela/hpoggir/src/Controller/UsersController.php(12): spl_autoload_call('App\\Controller\\...')
+#6 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(412): include('/home/zir/escue...')
+#7 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/zir/escue...')
+#8 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#9 [internal function]: spl_autoload_call('App\\Controller\\...')
+#10 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#11 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Use...', 'App')
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(91): Cake\Core\App::className('Users', 'Controller', 'Controller')
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventManager.php(425): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventManager.php(386): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(79): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /home/zir/escuela/hpoggir/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-08-15 21:30:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:30:22 Error: [ParseError] syntax error, unexpected 'Log' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /users/login
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/zir/escue...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/zir/escuela/hpoggir/src/Controller/UsersController.php(12): spl_autoload_call('App\\Controller\\...')
+#3 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(412): include('/home/zir/escue...')
+#4 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/zir/escue...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Use...', 'App')
+#9 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(91): Cake\Core\App::className('Users', 'Controller', 'Controller')
+#10 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventManager.php(425): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventManager.php(386): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#14 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(79): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#15 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#16 /home/zir/escuela/hpoggir/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-08-15 21:30:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:30:24 Error: [ParseError] syntax error, unexpected 'Log' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /users/login
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/zir/escue...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/zir/escuela/hpoggir/src/Controller/UsersController.php(12): spl_autoload_call('App\\Controller\\...')
+#3 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(412): include('/home/zir/escue...')
+#4 /home/zir/escuela/hpoggir/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/zir/escue...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Use...', 'App')
+#9 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(91): Cake\Core\App::className('Users', 'Controller', 'Controller')
+#10 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventManager.php(425): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventManager.php(386): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#14 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(79): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#15 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#16 /home/zir/escuela/hpoggir/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-08-15 21:30:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:30:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:30:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:48:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:48:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:48:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:48:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:48:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:48:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:48:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:48:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:50:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:51:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:53:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:53:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:53:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:53:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:53:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:53:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:59:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:59:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:59:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:59:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:59:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:59:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:59:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 21:59:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:00:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:01:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:02:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:03:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:03:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:07:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:07:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:07:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:07:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-08-15 22:07:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-10 18:59:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-10 18:59:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-10 18:59:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-10 19:01:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-10 19:01:45 Error: [PDOException] SQLSTATE[HY000] [2002] No such file or directory
+Request URL: /users
+Stack Trace:
+#0 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(47): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Database/Connection.php(322): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Table.php(433): Cake\Database\Connection->schemaCollection()
+#8 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#9 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#10 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Table.php(1312): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#11 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/ORM/Table.php(958): Cake\ORM\Table->query()
+#12 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#13 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Controller/Controller.php(698): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#14 /home/zir/escuela/hpoggir/src/Controller/UsersController.php(47): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#15 [internal function]: App\Controller\UsersController->index()
+#16 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#17 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(115): Cake\Controller\Controller->invokeAction()
+#18 /home/zir/escuela/hpoggir/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(88): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#19 /home/zir/escuela/hpoggir/webroot/index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-10-10 19:03:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:17:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:17:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:18:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:18:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:18:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:18:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:18:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:18:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:18:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:20:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:21:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:22:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:22:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:22:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:22:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:22:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:22:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:22:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-10-24 21:23:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
